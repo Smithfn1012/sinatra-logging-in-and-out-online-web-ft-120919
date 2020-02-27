@@ -5,7 +5,6 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
     enable :sessions unless test?
     set :session_secret, "secret"
-  end
 
   get '/' do
     erb :index
